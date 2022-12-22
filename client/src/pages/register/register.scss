@@ -1,0 +1,110 @@
+.register {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%),
+		linear-gradient(to bottom, rgba(0, 0, 0, 0) 00%, rgba(0, 0, 0, 1) 115%),
+		url("https://assets.nflxext.com/ffe/siteui/vlv3/6dea7743-5586-45d1-89a2-9569b1bb0340/eebe0083-676a-4594-a058-462db62ba1da/AR-en-20220207-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+	background-size: cover;
+	position: relative;
+	.top {
+		.wrapper {
+			padding: 20px 50px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.logo {
+				height: 36px;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+
+			.loginButton {
+				background-color: #e50914;
+				border: none;
+				color: white;
+				border-radius: 3px;
+				padding: 7px 17px;
+				font-size: 16px;
+				font-weight: 400;
+				cursor: pointer;
+			}
+		}
+	}
+	.container {
+		width: 100%;
+		height: auto;
+		margin-top: 230px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: white;
+
+		h1 {
+			font-size: 50px;
+			text-align: center;
+		}
+
+		h2 {
+			margin: 20px;
+			font-size: 28px;
+			font-weight: normal;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		.input {
+			width: 48%;
+			height: 58px;
+			background-color: white;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 20px;
+			overflow: hidden;
+
+			border-radius: 3px;
+
+			input {
+				flex: 9;
+				height: 100%;
+				border: none;
+				padding: 0 10px;
+
+				&::placeholder {
+					font-size: 16px;
+				}
+			}
+
+			.registerButton {
+				flex: 3.5;
+				padding: 8px 26px;
+				height: 100%;
+				background-color: #e50914;
+				color: white;
+				border: none;
+				font-size: 25px;
+				font-weight: 400;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+
+				.iconArrow {
+					margin-left: 13px;
+					font-size: 19px;
+				}
+
+				&:hover {
+					background-color: red;
+				}
+			}
+		}
+	}
+}
